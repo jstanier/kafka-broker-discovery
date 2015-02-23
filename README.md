@@ -15,3 +15,13 @@ KafkaBrokerDiscoverer discoverer = new KafkaBrokerDiscoverer(zookeeperHost, zook
 discoverer.getConnectionString();
 discoverer.close();
 ```
+
+## Command line usage
+
+There's also a command line version, if you want to see what it does.
+
+```
+mvn clean install
+mvn dependency:copy-dependencies
+java -cp target/kafka-broker-discovery-0.0.1-SNAPSHOT.jar:target/dependency/* com.brandwatch.kafka.discovery.Main -host zookeeper1 -port 4444
+```
