@@ -6,7 +6,7 @@ Typically you initialise Kafka `Producer` objects by providing a connection Stri
 
 If your application is already connecting to Zookeeper, then this code discovers a subset of Kafka brokers for you automatically.
 
-# Usage
+## Usage
 
 ```java
 String zookeeperHost = "zookeeper1";
