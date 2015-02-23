@@ -1,6 +1,6 @@
 # kafka-broker-discovery [![Build Status](https://travis-ci.org/jstanier/kafka-broker-discovery.svg?branch=master)](https://travis-ci.org/jstanier/kafka-broker-discovery) [![Coverage Status](https://coveralls.io/repos/jstanier/kafka-broker-discovery/badge.svg)](https://coveralls.io/r/jstanier/kafka-broker-discovery)
 
-Discover [Apache Kafka](http://kafka.apache.org/) brokers from Zookeeper. 
+Discover [Apache Kafka](http://kafka.apache.org/) brokers from [Zookeeper](http://zookeeper.apache.org/). 
 
 Typically you initialise Kafka `Producer` objects by providing a connection String for a subset of Kafka brokers in your cluster; e.g. `kafka1:2222,kafka2:2222`. From here, topic, partition and replica information is used to bootstrap the connection to the cluster.
 
