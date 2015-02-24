@@ -7,6 +7,10 @@
   <name>Kafka broker discovery</name>
   <description>Automatically discover Kafka brokers on Zookeeper</description>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
