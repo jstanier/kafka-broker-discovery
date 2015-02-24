@@ -1,8 +1,8 @@
 language: java
-env:
-  global:
-  - secure: pUM/tZc6Qqq9mI2JL+lBx0pgUBCWeh3bHtMd+iNWFae0beQP48u8nSOKDc6odQbhRLRFOMywplWuOJ+45dKmLhLAxfu0A9C6bbrhIq2GIuu4yV47hk+UB+i4ePduAPsfa/+tBpzQ9scEV8nr39w4Kj1OAObFi2xjbbbIfGRrOHc=
 jdk:
 - oraclejdk7
 after_success:
 - mvn clean cobertura:cobertura coveralls:cobertura -DrepoToken=REPO_TOKEN
+env:
+  global:
+    secure: bk0dKw+gHKbyuDQ4TrkSSW0dRTduzSXa5TaXkqUKq9HJCRMgrcbVHmjKuv72Vha/65ZfS9DQC/+n+jm+4hyqN3i72grIibzT/6rv0falnQhVMNZSrzHCm648/joCKRw65wZstlH8YL/ks1g5knOXMuW2Ig5is7aSqNcrcpUCNZ0=
