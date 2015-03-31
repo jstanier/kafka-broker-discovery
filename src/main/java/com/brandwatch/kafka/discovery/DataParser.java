@@ -5,17 +5,16 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import org.mockito.internal.util.collections.Sets;
-
 import com.google.common.base.Preconditions;
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
+import com.google.common.collect.Sets;
 
 public class DataParser {
 
     private static Splitter COMMA_SPLITTER = Splitter.on(",");
     private static Splitter COLON_SPLITTER = Splitter.on(":");
-    private static Set<String> VALID_KEYS = Sets.newSet("host", "port", "version", "timestamp",
+    private static Set<String> VALID_KEYS = Sets.newHashSet("host", "port", "version", "timestamp",
             "jmx_port");
 
     public BrokerInfo parseData(String data) throws BrokerParserException {
